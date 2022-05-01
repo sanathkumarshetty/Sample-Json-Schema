@@ -44,8 +44,7 @@
 			],
 			"default": null
 		},
-		"industry": {
-			"$id": "#scenario/items/industry",
+		"industry": {			
 			"title": "Industry",
 			"$ref": "#/$defs/simpleString"
 		},
