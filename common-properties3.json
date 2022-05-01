@@ -1,1 +1,309 @@
 
+
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+    "$defs":{
+        "simpleString": {
+            "type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+          }        
+    },
+	"definitions": {        
+		
+		"industryId": {
+			"title": "industryId",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 500,
+			"examples": [
+				1
+			]
+		},
+		"yearsKey": {
+			"type": "integer",
+			"minimum": 2010,
+			"maximum": 2200,
+			"examples": [
+				2010
+			]
+		},
+		"yearsValue": {
+			"anyOf": [{
+					"type": "number"
+				},
+				{
+					"type": "null"
+				}
+			],
+			"default": null
+		},
+		"industry": {
+			"$id": "#/common-properties/industry",
+			"title": "Industry",
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"scenarioTypeId": {
+			"$id": "#/common-properties/scenarioTypeId",
+			"title": "Scenariotypeid",
+			"type": "integer",
+			"enum": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"examples": [
+				1
+			]
+		},
+		"scenarioType": {
+			"$id": "#/common-properties/scenarioType",
+			"title": "Scenariotype",
+			"type": "string",
+			"enum": [
+				"Q1",
+				"Q2",
+				"Q3",
+				"Pre-C19",
+				"C19 Pessimistic 1",
+				"C19 Pessimistic 2",
+				"C19 Optimistic",
+				"China Hard Landing",
+				"US-CN Trade War",
+				"Eurozone Recession"
+			],
+			"examples": [
+				"May 2021 Baseline"
+			],
+			"pattern": "^.*$"
+		},
+		"geographyId": {
+			"$id": "#/common-properties/geographyId",
+			"title": "Geographyid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 800,
+			"examples": [
+				1
+			]
+		},
+		"geography": {
+			"$id": "#/common-properties/geography",
+			"title": "Geography",
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"regionId": {
+			"$id": "#/common-properties/regionId",
+			"title": "Regionid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 800,
+			"examples": [
+				1
+			]
+		},
+		"region": {
+			"$id": "#/common-properties/region",
+			"title": "Region",
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"categoryId": {
+			"$id": "#/common-properties/categoryId",
+			"title": "Categoryid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 100000,
+			"examples": [
+				1
+			]
+		},
+		"category": {
+			"$id": "#/common-properties/category",
+			"title": "Category",
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"parentCategoryId": {
+			"$id": "#/common-properties/parentCategoryId",
+			"title": "Parentcategoryid",
+			"type": "number",
+			"minimum": -1,
+			"maximum": 100000,
+			"examples": [
+				1
+			]
+		},
+		"parentCategory": {
+			"$id": "#/common-properties/parentCategory",
+			"title": "Parentcategory",
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"sectorLevel": {
+			"$id": "#/common-properties/sectorLevel",
+			"title": "Sectorlevel",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 20,
+			"examples": [
+				1
+			]
+		},
+		"dataTypeId": {
+			"$id": "#/common-properties/dataTypeId",
+			"title": "Datatypeid",
+			"type": "integer",
+			"enum": [
+				-1,
+				1,
+				2,
+				3
+			],
+			"examples": [
+				1
+			]
+		},
+		"dataType": {
+			"$id": "#/common-properties/dataType",
+			"title": "Datatype",
+			"type": "string",
+			"enum": [
+				"Na",
+				"Off Trade",
+				"On Trade",
+				"Total"
+			],
+			"examples": [
+				"Off Trade"
+			]
+		},
+		"totalPerCapitaConversionId": {
+			"$id": "#/common-properties/totalPerCapitaConversionId",
+			"title": "Totalpercapitaconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"totalPerCapitaConversion": {
+			"$id": "#/common-properties/totalPerCapitaConversion",
+			"title": "Totalpercapitaconversion",
+			"type": "string",
+			"enum": [
+				"Total",
+				"PerCapita"
+			],
+			"examples": [
+				"Total"
+			]
+		},
+		"actualGrowthConversionId": {
+			"$id": "#/common-properties/actualGrowthConversionId",
+			"title": "Actualgrowthconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"actualGrowthConversion": {
+			"$id": "#/common-properties/actualGrowthConversion",
+			"title": "Actualgrowthconversion",
+			"type": "string",
+			"enum": [
+				"Actual",
+				"Growth"
+			],
+			"examples": [
+				"Actual"
+			]
+		},
+		"valueVolumeConversionId": {
+			"$id": "#/common-properties/valueVolumeConversionId",
+			"title": "Valuevolumeconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"valueVolumeConversion": {
+			"$id": "#/common-properties/valueVolumeConversion",
+			"title": "Valuevolumeconversion",
+			"type": "string",
+			"enum": [
+				"Value",
+				"Volume"
+			],
+			"examples": [
+				"Value"
+			]
+		},
+		"inflationConversionId": {
+			"$id": "#/common-properties/inflationConversionId",
+			"title": "Inflationconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"inflationConversion": {
+			"$id": "#/common-properties/inflationConversion",
+			"title": "Inflationconversion",
+			"type": "string",
+			"default": "",
+			"enum": [
+				"Current",
+				"Constant"
+			],
+			"examples": [
+				"Current"
+			]
+		},
+		"currencyId": {
+			"$id": "#/common-properties/currencyId",
+			"title": "Currencyid",
+			"type": "integer",
+			"minimum": -1,
+			"maximum": 200,
+			"examples": [
+				1
+			]
+		},
+		"currency": {
+			"$id": "#/common-properties/currency",
+			"title": "Currency",
+			"type": "string",
+			"examples": [
+				"USD"
+			],
+			"pattern": "[A-Z]+"
+		}
+	}
+}
