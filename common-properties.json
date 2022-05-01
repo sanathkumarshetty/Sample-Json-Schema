@@ -50,6 +50,10 @@
 			],
 			"default": null
 		},
+		"yearsValueNew": {
+		    "title":"yearsval",
+		      "type": "number"
+		    }
 		"industry": {
 			"$id": "#scenario/items/industry",
 			"title": "Industry",
