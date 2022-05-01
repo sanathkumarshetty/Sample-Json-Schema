@@ -1,28 +1,14 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"type": "object",
-	"$defs": {
-		"simpleString": {
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
-		}
-	},
-	"definitions": {
-		"address": {
-			"title": "Address",
-			"properties": {
-				"street_address": {
-					"type": "string"
-				},
-				"city": {
-					"type": "string"
-				},
-				"state": {
-					"type": "string"
-				}
-			},
-			"type": "object"
-		},
+    "$defs":{
+        "simpleString": {
+            "type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
+          }        
+    },
+	"definitions": {        
+		
 		"industryId": {
 			"title": "industryId",
 			"type": "integer",
@@ -45,23 +31,19 @@
 					"type": "number"
 				},
 				{
-					"type": "null"
+					"type": null
 				}
 			],
 			"default": null
 		},
-		"yearsValueNew": {
-		    "title":"yearsval",
-		      "type": "number"
-		    },
 		"industry": {
-			"$id": "#scenario/items/industry",
+			"$id": "#/common-properties/industry",
 			"title": "Industry",
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"scenarioTypeId": {
-			"$id": "#scenario/items/scenarioTypeId",
+			"$id": "#/common-properties/scenarioTypeId",
 			"title": "Scenariotypeid",
 			"type": "integer",
 			"enum": [
@@ -83,7 +65,7 @@
 			]
 		},
 		"scenarioType": {
-			"$id": "#scenario/items/scenarioType",
+			"$id": "#/common-properties/scenarioType",
 			"title": "Scenariotype",
 			"type": "string",
 			"enum": [
@@ -104,7 +86,7 @@
 			"pattern": "^.*$"
 		},
 		"geographyId": {
-			"$id": "#scenario/items/geographyId",
+			"$id": "#/common-properties/geographyId",
 			"title": "Geographyid",
 			"type": "integer",
 			"minimum": 1,
@@ -114,13 +96,13 @@
 			]
 		},
 		"geography": {
-			"$id": "#scenario/items/geography",
+			"$id": "#/common-properties/geography",
 			"title": "Geography",
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"regionId": {
-			"$id": "#scenario/items/regionId",
+			"$id": "#/common-properties/regionId",
 			"title": "Regionid",
 			"type": "integer",
 			"minimum": 1,
@@ -130,13 +112,13 @@
 			]
 		},
 		"region": {
-			"$id": "#scenario/items/region",
+			"$id": "#/common-properties/region",
 			"title": "Region",
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"categoryId": {
-			"$id": "#scenario/items/categoryId",
+			"$id": "#/common-properties/categoryId",
 			"title": "Categoryid",
 			"type": "integer",
 			"minimum": 1,
@@ -146,13 +128,13 @@
 			]
 		},
 		"category": {
-			"$id": "#scenario/items/category",
+			"$id": "#/common-properties/category",
 			"title": "Category",
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"parentCategoryId": {
-			"$id": "#scenario/items/parentCategoryId",
+			"$id": "#/common-properties/parentCategoryId",
 			"title": "Parentcategoryid",
 			"type": "number",
 			"minimum": -1,
@@ -162,13 +144,13 @@
 			]
 		},
 		"parentCategory": {
-			"$id": "#scenario/items/parentCategory",
+			"$id": "#/common-properties/parentCategory",
 			"title": "Parentcategory",
-			"type": "string",
-			"pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"sectorLevel": {
-			"$id": "#scenario/items/sectorLevel",
+			"$id": "#/common-properties/sectorLevel",
 			"title": "Sectorlevel",
 			"type": "integer",
 			"minimum": 1,
@@ -178,7 +160,7 @@
 			]
 		},
 		"dataTypeId": {
-			"$id": "#scenario/items/dataTypeId",
+			"$id": "#/common-properties/dataTypeId",
 			"title": "Datatypeid",
 			"type": "integer",
 			"enum": [
@@ -192,7 +174,7 @@
 			]
 		},
 		"dataType": {
-			"$id": "#scenario/items/dataType",
+			"$id": "#/common-properties/dataType",
 			"title": "Datatype",
 			"type": "string",
 			"enum": [
@@ -206,7 +188,7 @@
 			]
 		},
 		"totalPerCapitaConversionId": {
-			"$id": "#scenario/items/totalPerCapitaConversionId",
+			"$id": "#/common-properties/totalPerCapitaConversionId",
 			"title": "Totalpercapitaconversionid",
 			"type": "integer",
 			"enum": [
@@ -218,7 +200,7 @@
 			]
 		},
 		"totalPerCapitaConversion": {
-			"$id": "#scenario/items/totalPerCapitaConversion",
+			"$id": "#/common-properties/totalPerCapitaConversion",
 			"title": "Totalpercapitaconversion",
 			"type": "string",
 			"enum": [
@@ -230,7 +212,7 @@
 			]
 		},
 		"actualGrowthConversionId": {
-			"$id": "#scenario/items/actualGrowthConversionId",
+			"$id": "#/common-properties/actualGrowthConversionId",
 			"title": "Actualgrowthconversionid",
 			"type": "integer",
 			"enum": [
@@ -242,7 +224,7 @@
 			]
 		},
 		"actualGrowthConversion": {
-			"$id": "#scenario/items/actualGrowthConversion",
+			"$id": "#/common-properties/actualGrowthConversion",
 			"title": "Actualgrowthconversion",
 			"type": "string",
 			"enum": [
@@ -254,7 +236,7 @@
 			]
 		},
 		"valueVolumeConversionId": {
-			"$id": "#scenario/items/valueVolumeConversionId",
+			"$id": "#/common-properties/valueVolumeConversionId",
 			"title": "Valuevolumeconversionid",
 			"type": "integer",
 			"enum": [
@@ -266,7 +248,7 @@
 			]
 		},
 		"valueVolumeConversion": {
-			"$id": "#scenario/items/valueVolumeConversion",
+			"$id": "#/common-properties/valueVolumeConversion",
 			"title": "Valuevolumeconversion",
 			"type": "string",
 			"enum": [
@@ -278,7 +260,7 @@
 			]
 		},
 		"inflationConversionId": {
-			"$id": "#scenario/items/inflationConversionId",
+			"$id": "#/common-properties/inflationConversionId",
 			"title": "Inflationconversionid",
 			"type": "integer",
 			"enum": [
@@ -290,7 +272,7 @@
 			]
 		},
 		"inflationConversion": {
-			"$id": "#scenario/items/inflationConversion",
+			"$id": "#/common-properties/inflationConversion",
 			"title": "Inflationconversion",
 			"type": "string",
 			"default": "",
@@ -303,7 +285,7 @@
 			]
 		},
 		"currencyId": {
-			"$id": "#scenario/items/currencyId",
+			"$id": "#/common-properties/currencyId",
 			"title": "Currencyid",
 			"type": "integer",
 			"minimum": -1,
@@ -313,7 +295,7 @@
 			]
 		},
 		"currency": {
-			"$id": "#scenario/items/currency",
+			"$id": "#/common-properties/currency",
 			"title": "Currency",
 			"type": "string",
 			"examples": [
