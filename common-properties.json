@@ -45,7 +45,7 @@
 					"type": "number"
 				},
 				{
-					"type": null
+					"type": "null"
 				}
 			],
 			"default": null
