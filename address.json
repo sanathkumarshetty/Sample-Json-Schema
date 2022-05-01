@@ -1,21 +1,30 @@
 {
-	"$schema": "http://json-schema.org/draft-07/schema#",
-	"type": "object",
-	"definitions": {
-		"address": {
-			"title": "Address",
-			"properties": {
-				"street_address": {
-					"type": "string"
-				},
-				"city": {
-					"type": "string"
-				},
-				"state": {
-					"type": "string"
-				}
-			},
-			"type": "object"
-		}
-	}
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "definitions": {
+    "address": {
+      "title": "Address",
+      "properties": {
+        "street_address": {
+          "type": "string"
+        },
+        "city": {
+          "type": "string"
+        },
+        "state": {
+          "type": "string"
+        }
+      },
+      "type": "object"
+    },
+    "industryId": {
+      "title": "industryId",
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 500,
+      "examples": [
+        1
+      ]
+    }
+  }
 }
