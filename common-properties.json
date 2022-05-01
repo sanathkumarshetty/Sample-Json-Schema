@@ -1,13 +1,13 @@
 {
 	"$schema": "http://json-schema.org/draft-07/schema#",
 	"type": "object",
-    "$defs":{
-        "simpleString": {
-            "type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
-          }        
-    },
-	"definitions": {        
+	"$defs": {
+		"simpleString": {
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		}
+	},
+	"definitions": {
 		"address": {
 			"title": "Address",
 			"properties": {
@@ -53,8 +53,8 @@
 		"industry": {
 			"$id": "#scenario/items/industry",
 			"title": "Industry",
-			"type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"scenarioTypeId": {
 			"$id": "#scenario/items/scenarioTypeId",
@@ -112,8 +112,8 @@
 		"geography": {
 			"$id": "#scenario/items/geography",
 			"title": "Geography",
-			"type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"regionId": {
 			"$id": "#scenario/items/regionId",
@@ -128,8 +128,8 @@
 		"region": {
 			"$id": "#scenario/items/region",
 			"title": "Region",
-			"type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"categoryId": {
 			"$id": "#scenario/items/categoryId",
@@ -144,8 +144,8 @@
 		"category": {
 			"$id": "#scenario/items/category",
 			"title": "Category",
-			"type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"parentCategoryId": {
 			"$id": "#scenario/items/parentCategoryId",
@@ -160,8 +160,8 @@
 		"parentCategory": {
 			"$id": "#scenario/items/parentCategory",
 			"title": "Parentcategory",
-			"type": "string",        
-            "pattern": "[a-zA-Z][a-zA-Z ]+"
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"sectorLevel": {
 			"$id": "#scenario/items/sectorLevel",
