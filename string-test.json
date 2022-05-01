@@ -20,6 +20,10 @@
     "name": {
       "title": "name",
       "type": "string"      
+    },
+    "numberstest": {
+    "title":"yearsval",
+      "type": "number"
     }
   }
 }
