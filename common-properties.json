@@ -53,7 +53,8 @@
 		"industry": {
 			"$id": "#scenario/items/industry",
 			"title": "Industry",
-			"$ref": "#/$defs/simpleString"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"scenarioTypeId": {
 			"$id": "#scenario/items/scenarioTypeId",
@@ -111,7 +112,8 @@
 		"geography": {
 			"$id": "#scenario/items/geography",
 			"title": "Geography",
-			"$ref": "#/$defs/simpleString"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"regionId": {
 			"$id": "#scenario/items/regionId",
@@ -126,7 +128,8 @@
 		"region": {
 			"$id": "#scenario/items/region",
 			"title": "Region",
-			"$ref": "#/$defs/simpleString"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"categoryId": {
 			"$id": "#scenario/items/categoryId",
@@ -141,7 +144,8 @@
 		"category": {
 			"$id": "#scenario/items/category",
 			"title": "Category",
-			"$ref": "#/$defs/simpleString"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"parentCategoryId": {
 			"$id": "#scenario/items/parentCategoryId",
@@ -156,7 +160,8 @@
 		"parentCategory": {
 			"$id": "#scenario/items/parentCategory",
 			"title": "Parentcategory",
-			"$ref": "#/$defs/simpleString"
+			"type": "string",        
+            "pattern": "[a-zA-Z][a-zA-Z ]+"
 		},
 		"sectorLevel": {
 			"$id": "#scenario/items/sectorLevel",
