@@ -1,1 +1,326 @@
 
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"type": "object",
+	"$defs": {
+		"simpleString": {
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		}
+	},
+	"definitions": {
+		"address": {
+			"title": "Address",
+			"properties": {
+				"street_address": {
+					"type": "string"
+				},
+				"city": {
+					"type": "string"
+				},
+				"state": {
+					"type": "string"
+				}
+			},
+			"type": "object"
+		},
+		"industryId": {
+			"title": "industryId",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 500,
+			"examples": [
+				1
+			]
+		},
+		"yearsKey": {
+			"type": "integer",
+			"minimum": 2010,
+			"maximum": 2200,
+			"examples": [
+				2010
+			]
+		},
+		"yearsValue": {
+			"anyOf": [{
+					"type": "number"
+				},
+				{
+					"type": "null"
+				}
+			],
+			"default": null
+		},
+		"yearsValueNew": {
+		    "title":"yearsval",
+		      "type": "number"
+		    },
+		"industry": {
+			"$id": "#scenario/items/industry",
+			"title": "Industry",
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"scenarioTypeId": {
+			"$id": "#scenario/items/scenarioTypeId",
+			"title": "Scenariotypeid",
+			"type": "integer",
+			"enum": [
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12
+			],
+			"examples": [
+				1
+			]
+		},
+		"scenarioType": {
+			"$id": "#scenario/items/scenarioType",
+			"title": "Scenariotype",
+			"type": "string",
+			"enum": [
+				"Q1",
+				"Q2",
+				"Q3",
+				"Pre-C19",
+				"C19 Pessimistic 1",
+				"C19 Pessimistic 2",
+				"C19 Optimistic",
+				"China Hard Landing",
+				"US-CN Trade War",
+				"Eurozone Recession"
+			],
+			"examples": [
+				"May 2021 Baseline"
+			],
+			"pattern": "^.*$"
+		},
+		"geographyId": {
+			"$id": "#scenario/items/geographyId",
+			"title": "Geographyid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 800,
+			"examples": [
+				1
+			]
+		},
+		"geography": {
+			"$id": "#scenario/items/geography",
+			"title": "Geography",
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"regionId": {
+			"$id": "#scenario/items/regionId",
+			"title": "Regionid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 800,
+			"examples": [
+				1
+			]
+		},
+		"region": {
+			"$id": "#scenario/items/region",
+			"title": "Region",
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"categoryId": {
+			"$id": "#scenario/items/categoryId",
+			"title": "Categoryid",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 100000,
+			"examples": [
+				1
+			]
+		},
+		"category": {
+			"$id": "#scenario/items/category",
+			"title": "Category",
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"parentCategoryId": {
+			"$id": "#scenario/items/parentCategoryId",
+			"title": "Parentcategoryid",
+			"type": "number",
+			"minimum": -1,
+			"maximum": 100000,
+			"examples": [
+				1
+			]
+		},
+		"parentCategory": {
+			"$id": "#scenario/items/parentCategory",
+			"title": "Parentcategory",
+			"type": "string",
+			"pattern": "[a-zA-Z][a-zA-Z ]+"
+		},
+		"sectorLevel": {
+			"$id": "#scenario/items/sectorLevel",
+			"title": "Sectorlevel",
+			"type": "integer",
+			"minimum": 1,
+			"maximum": 20,
+			"examples": [
+				1
+			]
+		},
+		"dataTypeId": {
+			"$id": "#scenario/items/dataTypeId",
+			"title": "Datatypeid",
+			"type": "integer",
+			"enum": [
+				-1,
+				1,
+				2,
+				3
+			],
+			"examples": [
+				1
+			]
+		},
+		"dataType": {
+			"$id": "#scenario/items/dataType",
+			"title": "Datatype",
+			"type": "string",
+			"enum": [
+				"Na",
+				"Off Trade",
+				"On Trade",
+				"Total"
+			],
+			"examples": [
+				"Off Trade"
+			]
+		},
+		"totalPerCapitaConversionId": {
+			"$id": "#scenario/items/totalPerCapitaConversionId",
+			"title": "Totalpercapitaconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"totalPerCapitaConversion": {
+			"$id": "#scenario/items/totalPerCapitaConversion",
+			"title": "Totalpercapitaconversion",
+			"type": "string",
+			"enum": [
+				"Total",
+				"PerCapita"
+			],
+			"examples": [
+				"Total"
+			]
+		},
+		"actualGrowthConversionId": {
+			"$id": "#scenario/items/actualGrowthConversionId",
+			"title": "Actualgrowthconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"actualGrowthConversion": {
+			"$id": "#scenario/items/actualGrowthConversion",
+			"title": "Actualgrowthconversion",
+			"type": "string",
+			"enum": [
+				"Actual",
+				"Growth"
+			],
+			"examples": [
+				"Actual"
+			]
+		},
+		"valueVolumeConversionId": {
+			"$id": "#scenario/items/valueVolumeConversionId",
+			"title": "Valuevolumeconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"valueVolumeConversion": {
+			"$id": "#scenario/items/valueVolumeConversion",
+			"title": "Valuevolumeconversion",
+			"type": "string",
+			"enum": [
+				"Value",
+				"Volume"
+			],
+			"examples": [
+				"Value"
+			]
+		},
+		"inflationConversionId": {
+			"$id": "#scenario/items/inflationConversionId",
+			"title": "Inflationconversionid",
+			"type": "integer",
+			"enum": [
+				1,
+				2
+			],
+			"examples": [
+				1
+			]
+		},
+		"inflationConversion": {
+			"$id": "#scenario/items/inflationConversion",
+			"title": "Inflationconversion",
+			"type": "string",
+			"default": "",
+			"enum": [
+				"Current",
+				"Constant"
+			],
+			"examples": [
+				"Current"
+			]
+		},
+		"currencyId": {
+			"$id": "#scenario/items/currencyId",
+			"title": "Currencyid",
+			"type": "integer",
+			"minimum": -1,
+			"maximum": 200,
+			"examples": [
+				1
+			]
+		},
+		"currency": {
+			"$id": "#scenario/items/currency",
+			"title": "Currency",
+			"type": "string",
+			"examples": [
+				"USD"
+			],
+			"pattern": "[A-Z]+"
+		}
+	}
+}
