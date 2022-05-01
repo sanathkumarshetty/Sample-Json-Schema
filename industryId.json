@@ -1,12 +1,16 @@
 {
-    "$schema": "http://json-schema.org/draft-07/schema#",
-    "type": "object",
-    "properties": {
-      "industryId": {
-        "type": "integer"
-      }
-    },
-    "required": [
-      "industryId"
-    ]
-  }
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/sanathkumarshetty/sample-json-Schema/blob/main/industryId.json",
+  "type": "object",
+  "properties": {
+    "industryId": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 500,
+      "examples": [ 1 ]
+    }
+  },
+  "required": [
+    "industryId"
+  ]
+}
