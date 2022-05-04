@@ -37,7 +37,6 @@
           "pattern": "[a-zA-Z][a-zA-Z ]+"
         }
       } ,
-      ,
       "required": [
         "id",
         "name",
