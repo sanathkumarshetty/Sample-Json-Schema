@@ -36,7 +36,16 @@
           "type": "string",
           "pattern": "[a-zA-Z][a-zA-Z ]+"
         }
-      }     
+      } ,
+      ,
+      "required": [
+        "id",
+        "name",
+        "sign",
+        "shortName",
+        "order",
+        "definition"
+      ]
     }
   }
 }
