@@ -1,1 +1,50 @@
-
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "softDrivers": {
+      "type": "object",
+      "title": "Soft-Drivers",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "name": {
+          "type": "string",
+          "pattern": "[a-zA-Z][a-zA-Z ]+"
+        },
+        "sign": {
+          "type": "string",
+          "enum": [
+            "postive",
+            "negative"
+          ],
+          "examples": [
+            "postive"
+          ]
+        },
+        "shortName": {
+          "type": "string",
+          "pattern": "[a-zA-Z][a-zA-Z ]+"
+        },
+        "order": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 200
+        },
+        "definition": {
+          "type": "string",
+          "pattern": "[a-zA-Z][a-zA-Z ]+"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "sign",
+        "shortName",
+        "order",
+        "definition"
+      ]
+    }
+  }
+}
