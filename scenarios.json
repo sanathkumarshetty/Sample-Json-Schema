@@ -1,0 +1,180 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.euromonitor.com/schemas/forecast-models/scenarios-release-1",  
+  "title": "Scenario",
+  "type": "array",
+  "default": [],
+  "items": {
+    "$id": "#scenario/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "industryId",
+      "industry",
+      "scenarioTypeId",
+      "scenarioType",
+      "geographyId",
+      "geography",
+      "regionId",
+      "region",
+      "categoryId",
+      "category",
+      "parentCategoryId",
+      "parentCategory",
+      "sectorLevel",
+      "dataTypeId",
+      "dataType",
+      "totalPerCapitaConversionId",
+      "totalPerCapitaConversion",
+      "actualGrowthConversionId",
+      "actualGrowthConversion",
+      "valueVolumeConversionId",
+      "valueVolumeConversion",
+      "inflationConversionId",
+      "inflationConversion",
+      "currencyId",
+      "historicYear1",
+      "historicYear1Value",
+      "historicYear2",
+      "historicYear2Value",
+      "baseYear",
+      "baseYearValue",
+      "forecastYear1",
+      "forecastYear1Value",
+      "forecastYear2",
+      "forecastYear2Value",
+      "forecastYear3",
+      "forecastYear3Value",
+      "forecastYear4",
+      "forecastYear4Value",
+      "forecastYear5",
+      "forecastYear5Value"
+    ],
+    "properties": {
+      "industryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industryId"
+      },
+      "industry": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industry"
+      },
+      "scenarioTypeId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioTypeId"
+      },
+      "scenarioType": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioType"
+      },
+      "geographyId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geographyId"
+      },
+      "geography": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geography"
+      },
+      "regionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/regionId"
+      },
+      "region": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/region"
+      },
+      "categoryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/categoryId"
+      },
+      "category": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/category"
+      },
+      "parentCategoryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategoryId"
+      },
+      "parentCategory": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategory"
+      },
+      "sectorLevel": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/sectorLevel"
+      },
+      "dataTypeId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataTypeId"
+      },
+      "dataType": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataType"
+      },
+      "totalPerCapitaConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversionId"
+      },
+      "totalPerCapitaConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversion"
+      },
+      "actualGrowthConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversionId"
+      },
+      "actualGrowthConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversion"
+      },
+      "valueVolumeConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversionId"
+      },
+      "valueVolumeConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversion"
+      },
+      "inflationConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversionId"
+      },
+      "inflationConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversion"
+      },
+      "currencyId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currencyId"
+      },
+      "currency": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currency"
+      },
+      "historicYear1": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "historicYear1Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "historicYear2": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "historicYear2Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "baseYear": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "baseYearValue": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "forecastYear1": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "forecastYear1Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "forecastYear2": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "forecastYear2Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "forecastYear3": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "forecastYear3Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "forecastYear4": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "forecastYear4Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "forecastYear5": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "forecastYear5Value": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      }
+    }
+  }
+}
