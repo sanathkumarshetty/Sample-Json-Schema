@@ -1,7 +1,6 @@
 {
   "definitions": {},
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://api.euromonitor.com/schemas/forecast-models/scenarios-release-1",  
+  "$schema": "http://json-schema.org/draft-07/schema#",  
   "title": "Scenario",
   "type": "array",
   "default": [],
