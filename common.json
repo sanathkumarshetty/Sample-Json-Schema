@@ -99,19 +99,7 @@
 		"scenarioType": {
 			"$id": "#scenario/items/scenarioType",
 			"title": "Scenariotype",
-			"type": "string",
-			"enum": [
-				"Q1",
-				"Q2",
-				"Q3",
-				"Pre-C19",
-				"C19 Pessimistic 1",
-				"C19 Pessimistic 2",
-				"C19 Optimistic",
-				"China Hard Landing",
-				"US-CN Trade War",
-				"Eurozone Recession"
-			],
+			"type": "string",			
 			"examples": [
 				"May 2021 Baseline"
 			],
