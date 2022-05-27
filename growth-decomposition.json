@@ -1,0 +1,285 @@
+{
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	  "$id": "https://api.euromonitor.com/schemas/forecast-models/growth-decomposition-release-1",
+	"type": "array",
+  "title": "Growth-Decomposition",
+	"items": [{
+		"type": "object",
+		"properties": {
+			"industryId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industryId"
+			},
+			"industry": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industry"
+			},
+			"scenarioTypeId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioTypeId"
+			},
+			"scenarioType": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioType"
+			},
+			"geographyId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geographyId"
+			},
+			"geography": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geography"
+			},
+			"regionId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/regionId"
+			},
+			"region": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/region"
+			},
+			"categoryId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/categoryId"
+			},
+			"category": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/category"
+			},
+			"parentCategoryId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategoryId"
+			},
+			"parentCategory": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategory"
+			},
+			"sectorLevel": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/sectorLevel"
+			},
+			"dataTypeId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataTypeId"
+			},
+			"dataType": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataType"
+			},
+			"totalPerCapitaConversionId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversionId"
+			},
+			"totalPerCapitaConversion": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversion"
+			},
+			"actualGrowthConversionId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversionId"
+			},
+			"actualGrowthConversion": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversion"
+			},
+			"valueVolumeConversionId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversionId"
+			},
+			"valueVolumeConversion": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversion"
+			},
+			"inflationConversionId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversionId"
+			},
+			"inflationConversion": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversion"
+			},
+			"currencyId": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currencyId"
+			},
+			"currency": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currency"
+			},
+			"factorId": {
+				"title": "FactorId"
+				"type": "integer",
+				"minimum": 1,
+				"maximum": 500,
+				"examples": [
+					1
+				]
+			},
+			"factorName": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/simpleString"
+			},
+			"driverGrowthCAGR": {
+				 "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/nullableNumber"
+			},
+			"driverGrowthhistoricYear1": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthhistoricYear1Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthhistoricYear2": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthhistoricYear2Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthbaseYear": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthbaseYearValue": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthforecastYear1": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthforecastYear1Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthforecastYear2": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthforecastYear2Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthforecastYear3": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthforecastYear3Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthforecastYear4": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthforecastYear4Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverGrowthforecastYear5": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverGrowthforecastYear5Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"1YeardriverElasticity": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/nullableNumber"
+			},
+			"5YeardriverElasticity": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/nullableNumber"
+			},
+			"driverEffectHistoricCagr": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/nullableNumber"
+			},
+			"driverEffectForecastCagr": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/nullableNumber"
+			},
+			"driverEffecthistoricYear1": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffecthistoricYear1Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffecthistoricYear2": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffecthistoricYear2Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectbaseYear": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectbaseYearValue": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectforecastYear1": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectforecastYear1Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectforecastYear2": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectforecastYear2Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectforecastYear3": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectforecastYear3Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectforecastYear4": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectforecastYear4Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"driverEffectforecastYear5": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+			},
+			"driverEffectforecastYear5Value": {
+				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+			},
+			"subDrivers": {
+
+				"$ref": "#"
+			},
+			"softDrivers": {
+				"type":"array",
+				"#ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/soft-drivers.json#/definitions/softDrivers"
+			},
+
+		},
+		"required": [
+			"industryId",
+			"industry",
+			"scenarioTypeId",
+			"scenarioType",
+			"geographyId",
+			"geography",
+			"regionId",
+			"region",
+			"categoryId",
+			"category",
+			"parentCategoryId",
+			"parentCategory",
+			"sectorLevel",
+			"dataTypeId",
+			"dataType",
+			"totalPerCapitaConversionId",
+			"totalPerCapitaConversion",
+			"actualGrowthConversionId",
+			"actualGrowthConversion",
+			"valueVolumeConversionId",
+			"valueVolumeConversion",
+			"inflationConversionId",
+			"inflationConversion",
+			"currencyId",
+			"currency",
+			"factorId",
+			"factorName",
+			"driverGrowthCAGR",
+			"driverGrowthhistoricYear1",
+			"driverGrowthhistoricYear1Value",
+			"driverGrowthhistoricYear2",
+			"driverGrowthhistoricYear2Value",
+			"driverGrowthbaseYear",
+			"driverGrowthbaseYearValue",
+			"driverGrowthforecastYear1",
+			"driverGrowthforecastYear1Value",
+			"driverGrowthforecastYear2",
+			"driverGrowthforecastYear2Value",
+			"driverGrowthforecastYear3",
+			"driverGrowthforecastYear3Value",
+			"driverGrowthforecastYear4",
+			"driverGrowthforecastYear4Value",
+			"driverGrowthforecastYear5",
+			"driverGrowthforecastYear5Value",
+			"1YeardriverElasticity",
+			"5YeardriverElasticity",
+			"driverEffectHistoricCagr",
+			"driverEffectForecastCagr",
+			"driverEffecthistoricYear1",
+			"driverEffecthistoricYear1Value",
+			"driverEffecthistoricYear2",
+			"driverEffecthistoricYear2Value",
+			"driverEffectbaseYear",
+			"driverEffectbaseYearValue",
+			"driverEffectforecastYear1",
+			"driverEffectforecastYear1Value",
+			"driverEffectforecastYear2",
+			"driverEffectforecastYear2Value",
+			"driverEffectforecastYear3",
+			"driverEffectforecastYear3Value",
+			"driverEffectforecastYear4",
+			"driverEffectforecastYear4Value",
+			"driverEffectforecastYear5",
+			"driverEffectforecastYear5Value",
+			"subDrivers"
+		]
+	}]
+}
