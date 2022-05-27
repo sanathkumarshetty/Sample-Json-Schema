@@ -82,7 +82,7 @@
 				"$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currency"
 			},
 			"factorId": {
-				"title": "FactorId"
+				"title": "FactorId",
 				"type": "integer",
 				"minimum": 1,
 				"maximum": 500,
