@@ -1,0 +1,165 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://api.euromonitor.com/schemas/forecast-models/market-potential-release-1",
+  "title": "Market-Potential",
+  "type": "array",
+  "default": [],
+  "items": {
+    "$id": "#market-potential/items",
+    "title": "Items",
+    "type": "object",
+    "required": [
+      "industryId",
+      "industry",
+      "scenarioTypeId",
+      "scenarioType",
+      "geographyId",
+      "geography",
+      "regionId",
+      "region",
+      "categoryId",
+      "category",
+      "parentCategoryId",
+      "parentCategory",
+      "sectorLevel",
+      "dataTypeId",
+      "dataType",
+      "totalPerCapitaConversionId",
+      "totalPerCapitaConversion",
+      "actualGrowthConversionId",
+      "actualGrowthConversion",
+      "valueVolumeConversionId",
+      "valueVolumeConversion",
+      "inflationConversionId",
+      "inflationConversion",
+      "currencyId",
+      "baseYear",
+      "baseYearValue",
+      "marketPotential",
+      "unmetMarketPotential",
+      "marketSizePercentage",
+      "unmetPotentialPercentage"
+    ],
+    "properties": {
+      "industryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industryId"
+      },
+      "industry": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/industry"
+      },
+      "scenarioTypeId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioTypeId"
+      },
+      "scenarioType": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/scenarioType"
+      },
+      "geographyId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geographyId"
+      },
+      "geography": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/geography"
+      },
+      "regionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/regionId"
+      },
+      "region": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/region"
+      },
+      "categoryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/categoryId"
+      },
+      "category": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/category"
+      },
+      "parentCategoryId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategoryId"
+      },
+      "parentCategory": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/parentCategory"
+      },
+      "sectorLevel": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/sectorLevel"
+      },
+      "dataTypeId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataTypeId"
+      },
+      "dataType": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/dataType"
+      },
+      "totalPerCapitaConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversionId"
+      },
+      "totalPerCapitaConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/totalPerCapitaConversion"
+      },
+      "actualGrowthConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversionId"
+      },
+      "actualGrowthConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/actualGrowthConversion"
+      },
+      "valueVolumeConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversionId"
+      },
+      "valueVolumeConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/valueVolumeConversion"
+      },
+      "inflationConversionId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversionId"
+      },
+      "inflationConversion": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/inflationConversion"
+      },
+      "currencyId": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currencyId"
+      },
+      "currency": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/currency"
+      },
+      "baseYear": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsKey"
+      },
+      "baseYearValue": {
+        "$ref": "https://raw.githubusercontent.com/sanathkumarshetty/sample-json-Schema/main/common.json#/definitions/yearsValue"
+      },
+      "marketPotential": {
+        "$id": "#market-potential/items/marketPotential",
+        "title": "Marketpotential",
+        "type": "number",
+        "examples": [
+          10586.408203125
+        ]
+      },
+      "unmetPotential": {
+        "$id": "#market-potential/items/unmetPotential",
+        "title": "Unmetpotential",
+        "type": "number",
+        "examples": [
+          7796.5521247079
+        ]
+      },
+      "marketSizePercentage": {
+        "$id": "#market-potential/items/marketSizePercentage",
+        "title": "Marketsizepercentage",
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 100.0,
+        "examples": [
+          26.3531
+        ]
+      },
+      "unmetPotentialPercentage": {
+        "$id": "#market-potential/items/unmetPotentialPercentage",
+        "title": "Unmetpotentialpercentage",
+        "type": "number",
+        "minimum": 0.0,
+        "maximum": 100.0,
+        "examples": [
+          73.6468
+        ],
+        "default": 0.0
+      }
+    }
+  }
+}
