@@ -77,9 +77,10 @@
 		"scenarioTypeId": {
 			"$id": "#scenario/items/scenarioTypeId",
 			"title": "Scenariotypeid",
+			 "description": "Below are list of values allowed \n Id Scenario \n 1 PassportBaseline",			
 			"type": "integer",
 			"enum": [
-				1,
+				1 ,
 				2,
 				3,
 				4,
@@ -125,7 +126,7 @@
 			"$id": "#scenario/items/regionId",
 			"title": "Regionid",
 			"type": "integer",
-			"minimum": 1,
+			"minimum": -1,
 			"maximum": 800,
 			"examples": [
 				1
@@ -173,7 +174,7 @@
 			"$id": "#scenario/items/sectorLevel",
 			"title": "Sectorlevel",
 			"type": "integer",
-			"minimum": 1,
+			"minimum": -1,
 			"maximum": 20,
 			"examples": [
 				1
@@ -284,6 +285,7 @@
 			"title": "Inflationconversionid",
 			"type": "integer",
 			"enum": [
+				-1,
 				1,
 				2
 			],
@@ -297,6 +299,7 @@
 			"type": "string",
 			"default": "",
 			"enum": [
+				"Na",
 				"Current",
 				"Constant"
 			],
@@ -309,7 +312,7 @@
 			"title": "Currencyid",
 			"type": "integer",
 			"minimum": -1,
-			"maximum": 200,
+			"maximum": 5,
 			"examples": [
 				1
 			]
@@ -318,8 +321,14 @@
 			"$id": "#scenario/items/currency",
 			"title": "Currency",
 			"type": "string",
-			"examples": [
-				"USD"
+			"enum": [
+				"Na",
+				"local",
+				"US Dollar",
+				"Euro",
+				"Pound Sterling",
+				"Japanese Yen",
+				"Swiss Franc"
 			],
 			"pattern": "[A-Z]+"
 		}
